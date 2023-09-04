@@ -1,0 +1,47 @@
+genarate random data.
+Aim: AI model to predict house rent in Bangalore at different locations.
+Features:
+1) Location
+2) Distance from junction
+3) Size of House
+4) no of rooms } use uniform distribution
+5) Dist from metro } use uniform distribution
+6) Furnished, Semi-furnished, not furnished
+7) Parking 
+8) Water & Electricity
+9) Predictor / Target Varable.
+size of house --> normal distribution
+mean = 350
+std = 150
+n = 2500
+
+Locations:
+1) Electronic city.
+2) silk board
+3) Yelanka
+4) kengan 
+5) Majestic
+6) K.R. Puram.
+
+Categorical - use choice fin.
+P ≤ 0.8 ---> Yes
+
+p > 0.8 ---> No.
+
+
+my project structure:
+.venv
+home_rent_data.csv # data
+hrp_generation.py # data genaration
+hrp_model.py # predict model
+main.py # user interface also add include to button to genarate new data if needed
+
+to run:
+# On Windows
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+
+python main.py
+
+deactivate
